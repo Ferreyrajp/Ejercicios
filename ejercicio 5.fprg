@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ferreyrajp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-27 11:33:13 p.&#160;m."/>
+        <attribute name="created" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMi0yNzsxMToyNjoxNCBwLsKgbS47Mzc2MQ=="/>
+        <attribute name="edited" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMi0yNzsxMTozMzoxMyBwLsKgbS47MTszODY2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Aflojar las tuercas de la rueda afectada utilizando la llave&quot;" newline="True"/>
+            <output expression="&quot;Colocar el cricke debajo del veh&#237;culo y levantar el auto hasta que la ruedaquede en el aire&quot;" newline="True"/>
+            <output expression="&quot;sacar las tuercas de la rueda&quot;" newline="True"/>
+            <output expression="&quot; Colocar la rueda de repuesto en el lugar de la rueda rota&quot;" newline="True"/>
+            <output expression="&quot;colocar las tuercas para asegurar la rueda&quot;" newline="True"/>
+            <output expression="&quot;Bajar el veh&#237;culo con cuidado hasta apoyar la rueda&quot;" newline="True"/>
+            <output expression="&quot;apretar las tuercas de la rueda&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

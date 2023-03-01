@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ferreyrajp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-27 11:56:09 p.&#160;m."/>
+        <attribute name="created" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMi0yNzsxMTozMzoyNCBwLsKgbS47Mzc2MA=="/>
+        <attribute name="edited" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMi0yNzsxMTo1NjowOSBwLsKgbS47MzszODc4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="TotalaPagar" type="Integer" array="False" size=""/>
+            <assign variable="TotalaPagar" expression="0"/>
+            <declare name="extras" type="Integer" array="False" size=""/>
+            <assign variable="extras" expression="0"/>
+            <declare name="HorasTrabajadasDia" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingresar la cantidad de horas trabajadas en el d&#237;a&quot;" newline="True"/>
+            <input variable="HorasTrabajadasDia"/>
+            <if expression="HorasTrabajadasDia&lt;=8">
+                <then>
+                    <assign variable="TotalaPagar" expression="HorasTrabajadasDia * 100"/>
+                </then>
+                <else>
+                    <assign variable="extras" expression="HorasTrabajadasDia - 8"/>
+                    <assign variable="TotalaPagar" expression="(8 * 100) + (extras * 150)"/>
+                </else>
+            </if>
+            <output expression="&quot;Horas trabajadas&quot;" newline="True"/>
+            <output expression="HorasTrabajadasDia" newline="True"/>
+            <output expression="&quot;pagar&quot;" newline="True"/>
+            <output expression="(TotalaPagar)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

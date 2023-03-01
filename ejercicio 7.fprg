@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ferreyrajp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-28 12:21:59 a.&#160;m."/>
+        <attribute name="created" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMi0yNzsxMTo1NjoyNSBwLsKgbS47Mzc2Ng=="/>
+        <attribute name="edited" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMi0yODsxMjoyMTo1OSBhLsKgbS47NzszODY2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numeroA" type="Integer" array="False" size=""/>
+            <output expression="&quot;ingrese el numero A&quot;" newline="True"/>
+            <input variable="numeroA"/>
+            <declare name="numeroB" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingrese el numero B&quot;" newline="True"/>
+            <input variable="numeroB"/>
+            <declare name="numeroC" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingrese el numero C&quot;" newline="True"/>
+            <input variable="numeroC"/>
+            <if expression="numeroA &lt; numeroB">
+                <then>
+                    <if expression="numeroA &lt; numeroC">
+                        <then>
+                            <output expression="(numeroA)" newline="True"/>
+                            <if expression="numeroC &lt; numeroB">
+                                <then>
+                                    <output expression="(numeroC)" newline="True"/>
+                                    <output expression="(numeroB)" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="(numeroB)" newline="True"/>
+                                    <output expression="(numeroC)" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="numeroB &lt; numeroC">
+                                <then>
+                                    <output expression="numeroA" newline="True"/>
+                                    <output expression="numeroB" newline="True"/>
+                                    <output expression="numeroC" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="numeroC" newline="True"/>
+                                    <output expression="numeroA" newline="True"/>
+                                    <output expression="numeroB" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="numeroB &lt; numeroC">
+                        <then>
+                            <output expression="(numeroB)" newline="True"/>
+                            <if expression="numeroC &lt; numeroA">
+                                <then>
+                                    <output expression="(numeroC)" newline="True"/>
+                                    <output expression="(numeroA)" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="(numeroA)" newline="True"/>
+                                    <output expression="(numeroC)" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="(numeroC)" newline="True"/>
+                            <output expression="(numeroB)" newline="True"/>
+                            <output expression="(numeroA)" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
