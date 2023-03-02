@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ferreyrajp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-01 11:40:45 p.&#160;m."/>
+        <attribute name="created" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wMTsxMTozMjozMyBwLsKgbS47Mzc1Mg=="/>
+        <attribute name="edited" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wMTsxMTo0MDo0NSBwLsKgbS47MjszODYz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="anio" type="Integer" array="False" size=""/>
+            <output expression="&quot;ingresar el anio&quot;" newline="True"/>
+            <input variable="anio"/>
+            <if expression="anio % 4 == 0">
+                <then>
+                    <if expression="(anio % 100 == 0) and (anio % 400 == 0)">
+                        <then>
+                            <output expression="&quot;Anio Bisiesto&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="(anio % 100 == 0)">
+                                <then>
+                                    <output expression="&quot;NO es Bisiesto&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Anio Bisiesto&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;NO es Bisiesto&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ferreyrajp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-01 11:30:14 p.&#160;m."/>
+        <attribute name="created" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wMTsxMToxOTowOSBwLsKgbS47Mzc2MA=="/>
+        <attribute name="edited" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wMTsxMTozMDoxNCBwLsKgbS47MjszODU4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Valorlibro" type="Real" array="False" size=""/>
+            <declare name="NroPaginas" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingrese el Nro de Paginas&quot;" newline="True"/>
+            <input variable="NroPaginas"/>
+            <if expression="300 &lt; NroPaginas and NroPaginas &lt; 600">
+                <then>
+                    <assign variable="ValorLibro" expression="500 + (20.20 * NroPaginas) +200"/>
+                </then>
+                <else>
+                    <if expression="600 &lt; NroPaginas">
+                        <then>
+                            <assign variable="ValorLibro" expression="500 + (20.20 * NroPaginas) + 200 +336"/>
+                        </then>
+                        <else>
+                            <assign variable="ValorLibro" expression="500 + (20.20 * NroPaginas)"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Valor del Libro es&quot;" newline="True"/>
+            <output expression="(ValorLibro)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
