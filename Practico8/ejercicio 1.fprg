@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ferreyrajp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-01 08:39:14 p.&#160;m."/>
+        <attribute name="created" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wMTswODozNTowNiBwLsKgbS47Mzc2MQ=="/>
+        <attribute name="edited" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wMTswODozOToxNCBwLsKgbS47MTszODcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NumeroA" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingrese un numero&quot;" newline="True"/>
+            <input variable="NumeroA"/>
+            <declare name="NumeroB" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingrese un numero&quot;" newline="True"/>
+            <input variable="NumeroB"/>
+            <if expression="NumeroA &lt; NumeroB">
+                <then>
+                    <output expression="&quot;el mayor es&quot;" newline="True"/>
+                    <output expression="(NumeroB)" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;el mayor es&quot;" newline="True"/>
+                    <output expression="(NumeroA)" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

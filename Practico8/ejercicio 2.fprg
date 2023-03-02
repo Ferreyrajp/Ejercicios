@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ferreyrajp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-01 10:52:59 p.&#160;m."/>
+        <attribute name="created" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wMTswODozNTowNiBwLsKgbS47Mzc2MQ=="/>
+        <attribute name="edited" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wMTsxMDo1Mjo1OSBwLsKgbS47NzszODc1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NumeroA" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingrese un numero&quot;" newline="True"/>
+            <input variable="NumeroA"/>
+            <declare name="NumeroB" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingrese un numero&quot;" newline="True"/>
+            <input variable="NumeroB"/>
+            <declare name="NumeroC" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingrese un numero&quot;" newline="True"/>
+            <input variable="NumeroC"/>
+            <if expression="(NumeroA &lt; NumeroB) or (NumeroA &lt; NumeroC)">
+                <then>
+                    <if expression="(NumeroB &lt; NumeroC)">
+                        <then>
+                            <output expression="&quot;el mayor es&quot;" newline="True"/>
+                            <output expression="(NumeroC)" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;el mayor es&quot;" newline="True"/>
+                            <output expression="(NumeroB)" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;el mayor es&quot;" newline="True"/>
+                    <output expression="(NumeroA)" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
