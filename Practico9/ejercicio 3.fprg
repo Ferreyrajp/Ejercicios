@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ferreyrajp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-04 05:59:25 p.&#160;m."/>
+        <attribute name="created" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wNDswNTo0NDo1MyBwLsKgbS47Mzc2Mw=="/>
+        <attribute name="edited" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wNDswNTo1OToyNSBwLsKgbS47NDszODc5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, aux, factorial" type="Integer" array="False" size=""/>
+            <output expression="&quot;ingrese un nomero para calcular el factorial&quot;" newline="True"/>
+            <input variable="numero"/>
+            <assign variable="aux" expression="numero -1"/>
+            <assign variable="factorial" expression="numero"/>
+            <while expression="aux &gt; 0">
+                <assign variable="factorial" expression="factorial * aux"/>
+                <assign variable="aux" expression="aux - 1"/>
+            </while>
+            <output expression="&quot;el factorial es&quot;" newline="True"/>
+            <output expression="(factorial)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

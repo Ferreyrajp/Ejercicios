@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ferreyrajp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-04 06:31:58 p.&#160;m."/>
+        <attribute name="created" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wNDswNTo1OTozNSBwLsKgbS47Mzc2OQ=="/>
+        <attribute name="edited" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wNDswNjozMTo1OCBwLsKgbS47NDszODc2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cont, fibo, fibo2, temp" type="Integer" array="False" size=""/>
+            <assign variable="cont" expression="10"/>
+            <assign variable="fibo" expression="0"/>
+            <assign variable="fibo2" expression="1"/>
+            <assign variable="temp" expression="0"/>
+            <while expression="cont &gt; 0">
+                <assign variable="temp" expression="fibo"/>
+                <assign variable="fibo" expression="fibo2"/>
+                <assign variable="fibo2" expression="temp + fibo"/>
+                <output expression="(fibo)" newline="True"/>
+                <assign variable="cont" expression="cont -1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

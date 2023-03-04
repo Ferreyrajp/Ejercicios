@@ -1,0 +1,34 @@
+<?php
+
+$precio_unitario = 0.10; // precio unitario de cada fotocopia
+$cantidad_minima = 1; // cantidad mínima de fotocopias a imprimir
+$cantidad_maxima = 500; // cantidad máxima de fotocopias a imprimir
+
+// Imprimimos la cabecera de la tabla
+echo "Cantidad de fotocopias \t Precio total \n";
+
+// Iteramos desde la cantidad mínima hasta la cantidad máxima
+for ($i = $cantidad_minima; $i <= $cantidad_maxima; $i++) {
+  
+  // Calculamos el precio total sin descuento
+  $precio_total = $i * $precio_unitario;
+  
+  // Aplicamos el descuento correspondiente según la cantidad de fotocopias
+  if ($i >= 100 && $i <= 200) {
+    $descuento = 0.12;
+  } elseif ($i >= 201 && $i <= 400) {
+    $descuento = 0.15;
+  } elseif ($i > 400) {
+    $descuento = 0.18;
+  } else {
+    $descuento = 0;
+  }
+  
+  // Calculamos el precio total con descuento
+  $precio_con_descuento = $precio_total - ($precio_total * $descuento);
+  
+  // Imprimimos la cantidad de fotocopias y el precio total con descuento
+  echo $i . " \t\t\t " . number_format($precio_con_descuento, 2) . "\n";
+}
+
+?>

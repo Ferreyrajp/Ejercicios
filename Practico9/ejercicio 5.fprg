@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ferreyrajp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-04 07:40:42 p.&#160;m."/>
+        <attribute name="created" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wNDswNzoxNjo0MSBwLsKgbS47Mzc2MQ=="/>
+        <attribute name="edited" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wNDswNzo0MDo0MiBwLsKgbS47NjszODcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="presiounitariodefotocopia, presiodescuento" type="Real" array="False" size=""/>
+            <output expression="&quot;ingresar presio unitario de fotocopia&quot;" newline="True"/>
+            <input variable="presiounitariodefotocopia"/>
+            <declare name="cantidadfotocopias, cont" type="Integer" array="False" size=""/>
+            <output expression="&quot;ingrese cantidad de fotocopias&quot;" newline="True"/>
+            <input variable="cantidadfotocopias"/>
+            <assign variable="cont" expression="0"/>
+            <while expression="cont &lt;= cantidadfotocopias">
+                <if expression="(cont &gt;= 100) and (cont &lt;=200)">
+                    <then>
+                        <assign variable="presiodescuento" expression="(cont * presiounitariodefotocopia) - ((cont * presiounitariodefotocopia)*0.12)"/>
+                        <output expression="(cont)" newline="True"/>
+                        <output expression="(presiodescuento)" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="(cont &gt;= 201) and (cont &lt;=400)">
+                            <then>
+                                <assign variable="presiodescuento" expression="(cont * presiounitariodefotocopia) - ((cont * presiounitariodefotocopia)*0.15)"/>
+                                <output expression="(cont)" newline="True"/>
+                                <output expression="(presiodescuento)" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="(cont &gt;= 401)">
+                                    <then>
+                                        <assign variable="presiodescuento" expression="(cont * presiounitariodefotocopia) - ((cont * presiounitariodefotocopia)*0.18)"/>
+                                        <output expression="(cont)" newline="True"/>
+                                        <output expression="(presiodescuento)" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <assign variable="presiodescuento" expression="(cont * presiounitariodefotocopia)"/>
+                                        <output expression="(cont)" newline="True"/>
+                                        <output expression="(presiodescuento)" newline="True"/>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <assign variable="cont" expression="cont +1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ferreyrajp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-04 05:36:39 p.&#160;m."/>
+        <attribute name="created" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wNDswNTozMDowMyBwLsKgbS47Mzc1Mw=="/>
+        <attribute name="edited" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wNDswNTozNjozOSBwLsKgbS47MzszODc4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="contador" type="Integer" array="False" size=""/>
+            <assign variable="contador" expression="10"/>
+            <declare name="valor" type="Integer" array="False" size=""/>
+            <while expression="contador &gt; 0">
+                <output expression="&quot;ingrese un numero&quot;" newline="True"/>
+                <input variable="valor"/>
+                <if expression="valor &lt; 10">
+                    <then>
+                        <output expression="&quot;valor menor a 10&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="(10 &lt; valor) and (valor &lt; 100)">
+                            <then>
+                                <output expression="&quot;esta entre 10 y 100&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;mayor a 100&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <assign variable="valor" expression="valor -1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
