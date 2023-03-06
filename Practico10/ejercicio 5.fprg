@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ferreyrajp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-05 10:50:35 p.&#160;m."/>
+        <attribute name="created" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wNTsxMDoyNjozNSBwLsKgbS47Mzc2MA=="/>
+        <attribute name="edited" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wNTsxMDo1MDozNSBwLsKgbS47NjszODcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cont, mul, valor" type="Integer" array="False" size=""/>
+            <assign variable="valor" expression="4"/>
+            <for variable="cont" start="1" end="10" direction="inc" step="1">
+                <assign variable="mul" expression="valor * cont"/>
+                <output expression="&quot;4 x &quot; &amp; (cont) &amp; &quot; = &quot; &amp; (mul)" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

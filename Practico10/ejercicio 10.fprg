@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ferreyrajp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-05 11:49:56 p.&#160;m."/>
+        <attribute name="created" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wNTsxMTozODoyMCBwLsKgbS47Mzc1OA=="/>
+        <attribute name="edited" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wNTsxMTo0OTo1NiBwLsKgbS47NTszODgx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numeron, cont" type="Integer" array="False" size=""/>
+            <output expression="&quot;ingrese un numero&quot;" newline="True"/>
+            <input variable="numeron"/>
+            <assign variable="cont" expression="1"/>
+            <if expression="numeron &gt; 0">
+                <then>
+                    <while expression="cont &lt;= numeron">
+                        <output expression="&quot;numeros impares &quot;&amp;cont" newline="True"/>
+                        <assign variable="cont" expression="cont +2"/>
+                    </while>
+                </then>
+                <else>
+                    <output expression="&quot;numero negativo&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

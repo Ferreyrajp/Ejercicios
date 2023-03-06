@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ferreyrajp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-05 09:50:05 p.&#160;m."/>
+        <attribute name="created" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wNTswOTo0NjoxMSBwLsKgbS47Mzc2NA=="/>
+        <attribute name="edited" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wNTswOTo1MDowNSBwLsKgbS47MjszODcx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cont, sumatoria, valor" type="Integer" array="False" size=""/>
+            <assign variable="sumatoria" expression="0"/>
+            <for variable="cont" start="1" end="5" direction="inc" step="1">
+                <output expression="&quot;ingrese un valor&quot;" newline="True"/>
+                <input variable="valor"/>
+                <assign variable="sumatoria" expression="sumatoria + valor"/>
+            </for>
+            <output expression="&quot;la sumatoria es&quot;" newline="True"/>
+            <output expression="(sumatoria)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

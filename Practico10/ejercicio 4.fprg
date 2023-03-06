@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ferreyrajp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-05 10:26:24 p.&#160;m."/>
+        <attribute name="created" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wNTsxMDowNzo0OSBwLsKgbS47Mzc2NA=="/>
+        <attribute name="edited" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wNTsxMDoyNjoyNCBwLsKgbS47NjszODcx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cont, valor" type="Integer" array="False" size=""/>
+            <for variable="cont" start="1" end="10" direction="inc" step="1">
+                <output expression="&quot;Ingrese un valor&quot;" newline="True"/>
+                <input variable="valor"/>
+                <if expression="valor &lt; 10">
+                    <then>
+                        <output expression="&quot;valor menor a 10&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="10 &lt; valor and valor&lt; 100">
+                            <then>
+                                <output expression="&quot;valor entre 10-100&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;valor mayor a 100&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

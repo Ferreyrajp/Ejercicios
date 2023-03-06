@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ferreyrajp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-05 11:13:36 p.&#160;m."/>
+        <attribute name="created" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wNTsxMDo1Mjo0NCBwLsKgbS47Mzc1OQ=="/>
+        <attribute name="edited" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wNTsxMToxMzozNiBwLsKgbS47NzszODcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nro" type="Integer" array="True" size="10"/>
+            <declare name="cont, suma, mayor, orden" type="Integer" array="False" size=""/>
+            <declare name="promedio" type="Real" array="False" size=""/>
+            <for variable="cont" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;ingrese un numero entero&quot;" newline="True"/>
+                <input variable="nro[cont]"/>
+            </for>
+            <assign variable="suma" expression="0"/>
+            <for variable="cont" start="0" end="9" direction="inc" step="1">
+                <assign variable="suma" expression="suma + nro[cont]"/>
+            </for>
+            <assign variable="promedio" expression="suma / 10"/>
+            <output expression="&quot; el promedio es: &quot;&amp;promedio" newline="True"/>
+            <assign variable="mayor" expression="0"/>
+            <for variable="cont" start="0" end="9" direction="inc" step="1">
+                <if expression="mayor &lt; nro[cont]">
+                    <then>
+                        <assign variable="mayor" expression="nro[cont]"/>
+                        <assign variable="orden" expression="cont +1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;el mayor es: &quot;&amp;mayor&amp;&quot;y fue ingresado en &quot;&amp;orden&amp;&quot; lugar&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

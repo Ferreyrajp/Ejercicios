@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ferreyrajp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-05 11:20:54 p.&#160;m."/>
+        <attribute name="created" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wNTsxMToxMzo1NyBwLsKgbS47Mzc2MQ=="/>
+        <attribute name="edited" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wNTsxMToyMDo1NCBwLsKgbS47MjszODY1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sumapares, valor, sumarnros" type="Integer" array="False" size=""/>
+            <assign variable="sumapares" expression="0"/>
+            <assign variable="valor" expression="0"/>
+            <assign variable="sumarnros" expression="0"/>
+            <while expression="sumapares &lt; 100">
+                <output expression="&quot;ingrese un valor entero&quot;" newline="True"/>
+                <input variable="valor"/>
+                <assign variable="sumarnros" expression="sumarnros +1"/>
+                <if expression="valor % 2 ==0">
+                    <then>
+                        <assign variable="sumapares" expression="sumapares+ valor"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+            <output expression="&quot;se ingresaron &quot;&amp;sumarnros&amp;&quot; numeros&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
