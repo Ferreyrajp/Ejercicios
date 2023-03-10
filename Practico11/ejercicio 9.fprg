@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ferreyrajp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-09 11:29:54 p.&#160;m."/>
+        <attribute name="created" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wOTsxMToxODo1NiBwLsKgbS47Mzc2OQ=="/>
+        <attribute name="edited" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wOTsxMToyOTo1NCBwLsKgbS47NDszODgw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="radio, volumen, pipi" type="Real" array="False" size=""/>
+            <output expression="&quot;ingrese valor del radio&quot;" newline="True"/>
+            <input variable="radio"/>
+            <assign variable="pipi" expression="3.14159"/>
+            <assign variable="volumen" expression="(4/3) * pipi * (radio*radio*radio)"/>
+            <output expression="&quot;el volumen de la esfera es: &quot;&amp;volumen" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

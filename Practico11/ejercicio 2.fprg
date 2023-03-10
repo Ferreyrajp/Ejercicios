@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ferreyrajp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-09 10:32:14 p.&#160;m."/>
+        <attribute name="created" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wOTsxMDoyOTo1MCBwLsKgbS47Mzc2NA=="/>
+        <attribute name="edited" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wOTsxMDozMjoxNCBwLsKgbS47MjszODY3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor1, valor2" type="Integer" array="False" size=""/>
+            <output expression="&quot;ingrese valor 1&quot;" newline="True"/>
+            <input variable="valor1"/>
+            <output expression="&quot;ingrese valor 2&quot;" newline="True"/>
+            <input variable="valor2"/>
+            <if expression="valor1 &gt; valor2">
+                <then>
+                    <output expression="&quot;Mayor es: &quot;&amp;valor1" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Mayor es: &quot;&amp;valor2" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

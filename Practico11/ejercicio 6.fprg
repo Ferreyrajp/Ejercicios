@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ferreyrajp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-09 11:11:40 p.&#160;m."/>
+        <attribute name="created" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wOTsxMTowNzoyOSBwLsKgbS47Mzc2Nw=="/>
+        <attribute name="edited" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wOTsxMToxMTo0MCBwLsKgbS47MjszODY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor1, valor2, aux" type="Integer" array="False" size=""/>
+            <output expression="&quot;leer valor1&quot;" newline="True"/>
+            <input variable="valor1"/>
+            <output expression="&quot;leer valor2&quot;" newline="True"/>
+            <input variable="valor2"/>
+            <if expression="valor1 &gt; valor2">
+                <then>
+                    <assign variable="aux" expression="valor1"/>
+                    <assign variable="valor1" expression="valor2"/>
+                    <assign variable="valor2" expression="aux"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;valores son:&quot;&amp;valor1&amp;&quot; &quot;&amp;valor2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

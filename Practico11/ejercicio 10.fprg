@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ferreyrajp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-09 11:31:12 p.&#160;m."/>
+        <attribute name="created" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wOTsxMTowNToyNiBwLsKgbS47Mzc2Mg=="/>
+        <attribute name="edited" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wOTsxMTozMToxMiBwLsKgbS47NTszODY4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor, cont" type="Integer" array="False" size=""/>
+            <for variable="cont" start="1" end="100" direction="inc" step="1">
+                <output expression="&quot;ingrese un valor&quot;" newline="True"/>
+                <input variable="valor"/>
+                <if expression="(valor % 2) == 0">
+                    <then>
+                        <output expression="&quot;el valor es par&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;el valor es inpar&quot;" newline="True"/>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

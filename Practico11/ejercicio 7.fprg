@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ferreyrajp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-09 11:18:46 p.&#160;m."/>
+        <attribute name="created" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wOTsxMToxMjowMSBwLsKgbS47Mzc1Mw=="/>
+        <attribute name="edited" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wOTsxMToxODo0NiBwLsKgbS47NTszODgw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor, cont, flag" type="Integer" array="False" size=""/>
+            <assign variable="flag" expression="0"/>
+            <output expression="&quot;ingresar un valor&quot;" newline="True"/>
+            <input variable="valor"/>
+            <for variable="cont" start="2" end="valor-1" direction="inc" step="1">
+                <if expression="(valor % cont)==0">
+                    <then>
+                        <assign variable="flag" expression="1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="flag == 1">
+                <then>
+                    <output expression="&quot;el nro no es primo&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;nro primo&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

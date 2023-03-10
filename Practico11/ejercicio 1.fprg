@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ferreyrajp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-09 10:29:38 p.&#160;m."/>
+        <attribute name="created" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wOTsxMDoxNjoxNyBwLsKgbS47Mzc2Mw=="/>
+        <attribute name="edited" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wOTsxMDoyOTozOCBwLsKgbS47NzszODg0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="notaparcial" type="Integer" array="True" size="3"/>
+            <declare name="cont, suma" type="Integer" array="False" size=""/>
+            <declare name="promedio" type="Real" array="False" size=""/>
+            <assign variable="promedio" expression="0"/>
+            <assign variable="suma" expression="0"/>
+            <for variable="cont" start="0" end="2" direction="inc" step="1">
+                <output expression="&quot;ingrese la nota parcial &quot;&amp;cont+1" newline="True"/>
+                <input variable="notaparcial[cont]"/>
+            </for>
+            <for variable="cont" start="0" end="2" direction="inc" step="1">
+                <assign variable="suma" expression="suma + notaparcial[cont]"/>
+            </for>
+            <assign variable="promedio" expression="suma /3"/>
+            <output expression="&quot;El promedio es: &quot;&amp;promedio" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

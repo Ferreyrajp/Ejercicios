@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ferreyrajp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-09 10:49:57 p.&#160;m."/>
+        <attribute name="created" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wOTsxMDozMjozOCBwLsKgbS47Mzc2NA=="/>
+        <attribute name="edited" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wOTsxMDo0OTo1NyBwLsKgbS47NTszODg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valores" type="Integer" array="True" size="3"/>
+            <declare name="cont, menor, mayor, flag" type="Integer" array="False" size=""/>
+            <assign variable="flag" expression="0"/>
+            <for variable="cont" start="0" end="2" direction="inc" step="1">
+                <output expression="&quot;ingrese valor &quot;&amp;cont+1" newline="True"/>
+                <input variable="valores[cont]"/>
+            </for>
+            <assign variable="menor" expression="valores[0]"/>
+            <assign variable="mayor" expression="valores[0]"/>
+            <for variable="cont" start="1" end="2" direction="inc" step="1">
+                <if expression="menor &lt; valores[cont]">
+                    <then/>
+                    <else>
+                        <if expression="menor == valores[cont]">
+                            <then>
+                                <assign variable="flag" expression="1"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <assign variable="menor" expression="valores[cont]"/>
+                    </else>
+                </if>
+                <if expression="mayor &gt; valores[cont]">
+                    <then/>
+                    <else>
+                        <if expression="mayor == valores[cont]">
+                            <then>
+                                <assign variable="flag" expression="1"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <assign variable="mayor" expression="valores[cont]"/>
+                    </else>
+                </if>
+            </for>
+            <if expression="flag == 1">
+                <then>
+                    <output expression="&quot;se cargaron valores repetidos el menor es &quot;&amp;menor&amp;&quot; y el mayor es:&quot;&amp;mayor" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;el menor es &quot;&amp;menor&amp;&quot; y el mayor es:&quot;&amp;mayor" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

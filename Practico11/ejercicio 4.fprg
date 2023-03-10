@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ferreyrajp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-09 10:51:55 p.&#160;m."/>
+        <attribute name="created" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wOTsxMDo1MDoxMSBwLsKgbS47Mzc1NQ=="/>
+        <attribute name="edited" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wOTsxMDo1MTo1NSBwLsKgbS47MzszODc0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sumatoria, cont" type="Integer" array="False" size=""/>
+            <assign variable="sumatoria" expression="0"/>
+            <for variable="cont" start="1" end="10" direction="inc" step="1">
+                <assign variable="sumatoria" expression="sumatoria + cont"/>
+            </for>
+            <output expression="&quot;la sumatoria es: &quot;&amp;sumatoria" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
