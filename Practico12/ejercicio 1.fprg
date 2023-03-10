@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ferreyrajp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-09 11:52:56 p.&#160;m."/>
+        <attribute name="created" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wOTsxMTo0NDowMiBwLsKgbS47Mzc1OQ=="/>
+        <attribute name="edited" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0wOTsxMTo1Mjo1NiBwLsKgbS47MjszODc2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Hentrada, Hsalida, estadia, monto" type="Integer" array="False" size=""/>
+            <output expression="&quot;ingrese hora entrada&quot;" newline="True"/>
+            <input variable="Hentrada"/>
+            <output expression="&quot;ingrese hora salida&quot;" newline="True"/>
+            <input variable="Hsalida"/>
+            <if expression="Hsalida &gt; Hentrada">
+                <then>
+                    <assign variable="estadia" expression="Hsalida-Hentrada"/>
+                </then>
+                <else>
+                    <assign variable="estadia" expression="24 - (Hentrada+Hsalida)"/>
+                </else>
+            </if>
+            <if expression="estadia &lt;= 1">
+                <then>
+                    <output expression="&quot;debe pagar 1500$&quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="monto" expression="((estadia -1)*1000)+1500"/>
+                    <output expression="&quot;debe pagar &quot;&amp;monto&amp;&quot;$&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

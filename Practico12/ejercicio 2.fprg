@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ferreyrajp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-10 12:07:23 a.&#160;m."/>
+        <attribute name="created" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0xMDsxMjowMDo0OCBhLsKgbS47MzczOQ=="/>
+        <attribute name="edited" value="ZmVycmV5cmFqcDtERVNLVE9QLThWTU5ORzk7MjAyMy0wMy0xMDsxMjowNzoyMyBhLsKgbS47NDszODUw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Htrabajadas, sueldobruto" type="Integer" array="False" size=""/>
+            <output expression="&quot;ingresar horas trabajadas&quot;" newline="True"/>
+            <input variable="Htrabajadas"/>
+            <declare name="DesApJub, osocial, sueldoneto" type="Real" array="False" size=""/>
+            <assign variable="sueldobruto" expression="0"/>
+            <assign variable="sueldobruto" expression="Htrabajadas * 700"/>
+            <assign variable="DesApJub" expression="sueldobruto * 0.15"/>
+            <assign variable="osocial" expression="sueldobruto * 0.03"/>
+            <assign variable="sueldoneto" expression="sueldobruto - DesApJub-osocial"/>
+            <output expression="&quot;el sueldo neto es: &quot;&amp;sueldoneto" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
